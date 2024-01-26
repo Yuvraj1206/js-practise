@@ -52,7 +52,7 @@ function addone(num){
 
 
 
-addTwo(5)                     //calling function before its declaration will not work
-const addTwo = function(num){  //function in variable 
-    return num + 2
+addTwo(5)                       //calling function before its declaration will not work
+const addTwo = function(num){  //function in variables
+    return num + 2            
 }
