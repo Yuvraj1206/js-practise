@@ -10,7 +10,9 @@ const outsideTemp = null
 let userEmail;
 
 const id = Symbol('123')
+// console.log(id);
 const anotherId = Symbol('123')
+// console.log(anotherId);
 
 console.log(id === anotherId);
 
