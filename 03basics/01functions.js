@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){            //rest parameter
+function calculateCartPrice(val1, val2, ...num1){            //reset parameter
     return num1 
 }
 
