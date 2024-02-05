@@ -29,7 +29,7 @@ const result = addTwoNumbers(3, 5)
 
 function loginUserMessage(username = "sam"){
     if(!username){
-        console.log("PLease enter a username");
+        console.log("Please enter a username");
         return
     }
     return `${username} just logged in`
@@ -46,7 +46,7 @@ function calculateCartPrice(val1, val2, ...num1){            //rest parameter
 // console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
-    username: "hitesh",
+    username: "Hitesh",
     prices: 199
 }
 
