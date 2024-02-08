@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | Chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- this is a comment -->
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent = document.querySelector('.parent')    //selecting parent div and storing in parent 
+    // console.log(parent);                             //will print complete parent html with tags
+    // console.log(parent.children);                    //return children as html list
+    // console.log(parent.children[1].innerHTML);       
+
+    // for (let i = 0; i < parent.children.length; i++) {        //using loop to select each htmllist elements
+    //      console.log(parent.children[i].innerHTML);
+        
+    // }
+    parent.children[1].style.color = "orange"           //applying css
+    // console.log(parent.firstElementChild);          //firstchild of parent
+    // console.log(parent.lastElementChild);           //last child of parent
+
+    const dayOne = document.querySelector('.day')   //querry selcter selcting class
+    // console.log(dayOne);                                                 
+    // console.log(dayOne.parentElement);                   //selecting parent element
+    // console.log(dayOne.nextElementSibling);              //selecting sibling of the element                
+
+    console.log("NODES: ", parent.childNodes);        //listing nodes of parent
+</script>
+</html>
