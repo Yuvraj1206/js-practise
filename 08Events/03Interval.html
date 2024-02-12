@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="color:white; background-color: rgb(54, 52, 52);">
+    <p>Hi this is <span id="name">Yuvraj saha</span></p>
+    <p>Click to change</p>
+    <button id="start">START</button>
+    <button id="stop">STOP</button>
+</body>
+</html>
+
+<script>
+    const name= document.querySelector('#name')
+
+    const changeName= function(f){
+        name.innerText=f+"Abhijeet"+Date.now()
+    }
+
+    let intervalName;
+
+    document.querySelector("#start").addEventListener("click",function(){
+        intervalName=setInterval(changeName, 1000, "fazer")
+    })
+
+    document.querySelector("#stop").addEventListener("click",function(){
+        clearInterval(intervalName)
+    })
+</script>
