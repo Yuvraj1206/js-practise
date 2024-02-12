@@ -105,8 +105,8 @@ consumePromiseFive()                                //calling async function
 // yes this is also available, kuch reading aap b kro.
 
 //---------------------BY Yuvraj---------------
-
-const YuvrajPromise=new Promise(function(resolve,reject){
+ 
+const YuvrajPromise=new Promise(function(resolve,reject){       //creating promise
     setTimeout(function(){                                     //will execute after 1 sec
         let error=false
         
@@ -116,7 +116,7 @@ const YuvrajPromise=new Promise(function(resolve,reject){
     },1000)
 })
 
-YuvrajPromise
+YuvrajPromise                                               //fetching promise
 .then(function(response){
     // console.log(response.UserName+" ka promise saccha hai"+ "and password hai:-" + response.Pass)
     return response
@@ -131,10 +131,9 @@ YuvrajPromise
     console.log("Toh patta chal gya na Yuvraj ka promise")
 })
 
-
+//NOW
 //fetching data from github api
 //no need to create promise, just fetch from link
-
 fetch("https://api.github.com/users/yuvraj1206")      //sabse pehle ye output de ra console me
 .then((data)=>{
     return data.json()                           //converting from string to Json(on=bject jaisa) 
@@ -146,3 +145,4 @@ fetch("https://api.github.com/users/yuvraj1206")      //sabse pehle ye output de
 .catch((error)=>{
     console.log(error)
 })
+
